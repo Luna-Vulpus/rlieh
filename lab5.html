@@ -28,16 +28,38 @@
                 line-height: 30px;
                 padding: 20px;
             }
-            .a{
+            .b{
+                background-color: rgb(228, 198, 198);
+                border:  5px;
                 width: 200px;
                 height: 50;
                 float: left;
 
             }
-            .b{
+            .c{
+                background-color: rgb(228, 198, 198);
+                border:  5px;
                 width: 200px;
                 height: 50;
                 float: right;
+            }
+            .d{
+                border:  5px;
+                position: relative;
+            }
+            .e{
+                border-color: #333;
+                border-style: solid;
+                border-width: 5px;
+                background: 5px;
+                background-color: rgb(155, 190, 154);
+                position: relative;
+                z-index: auto;
+                width: 200px;
+                height: 100px;
+            }
+            .e:hover {
+                background-color: #516;
             }
         </style>
     </head>
@@ -61,6 +83,39 @@
             <div class="c">block 6</div>
 
             <div style="clear:both">end</div>
+
+            <h1>Relative</h1>
+            <div class="d">Кто понял жизнь тот больше не спешит,</div>
+            <div class="d">Смакует каждый миг и наблюдает,</div>
+            <div class="d" style="top: -28px; left: 70px;">Как спит ребёнок, молится старик,</div>
+            <div class="d">Как дождь идёт и как снежинки тают.</div>
+
+            <h1>Absolute</h1>
+            <div>В обыкновенном видит красоту,</div>
+            <div>В запутанном простейшее решенье,</div>
+            <div style="position: absolute; left: 200px; top: 100px;">Он знает, как осуществить мечту,</div>
+            <div>Он любит жизнь и верит в воскресенье,</div>
+
+            <h1>Fixed</h1>
+            <div style="position: Fixed; bottom: 300px; right: 300px;">
+                Он понял то, что счастье не в деньгах,<br>
+                И их количество от горя не спасет,<br>
+                Но кто живёт с синицею в руках,<br>
+                Свою жар-птицу точно не найдет<br>
+            </div>
+            <div>
+            Кто понял жизнь, тот понял суть вещей,<br>
+            Что совершенней жизни только смерть,<br>
+            Что знать, не удивляясь, пострашней,<br>
+            Чем что-нибудь не знать и не уметь.
+            </div>
+
+            <div class="e" style="top: -30px; left: 70px;">block 1</div>
+            <div class="e" style="top: -40px; left: 80px;">block 2</div>
+            <div class="e" style="top: -50px; left: 90px;">block 3</div>
+            <div class="e" style="top: -60px; left: 100px;">block 4</div>
+            <div class="e" style="top: -70px; left: 110px;">block 5</div>
+
         </div>
         <div class="footer">
             <i>Факультет Бизнеса, ФБИ-03, 3 курс, 2022</i>

@@ -39,3 +39,11 @@ function showAlert() {
     let color = 'rgb(' + r + ',' + g + ',' + b + ')';
     document.getElementById('user-data').style.backgroundColor = color;
 }
+function bc() {
+    let r = Math.round(Math.random()*255);
+    let g = Math.round(Math.random()*255);
+    let b = Math.round(Math.random()*255);
+    let color = 'rgb(' + r + ',' + g + ',' + b + ')';
+    document.getElementById('header').style.backgroundColor = color;
+    document.getElementById('footer').style.backgroundColor = color;
+}

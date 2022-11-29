@@ -8,33 +8,38 @@
 
             let x = 33;
             let s = 'яблоки';
-            let if = 17;
+            //let if = 17;
             console.log('x=', x, 's= ', s);
         </script>
+        <script src="Lab_6.js"></script>
     </head>
     <body>
         <div class="header">
-            <b>Никита Николаевич</b>
+            <div id="student">Никита Николаевич</div>
+        <div class="language">
+            <input type="button" value="ru" onclick="setRussian()">
+            <input type="button" value="en" onclick="setEnglish()">
             <link rel="stylesheet" href="Lab_6.css" type="text/css">
+        </div>
         </div>
         <div class="content">
             <form>
                 <div>
-                    <span>Ваше имя</span><input type="text">
+                    <span id="your-name">Ваше имя</span><input type="text" id="input-name" placeholder="введите имя">
                 </div>
                 <div>
-                    <span>Ваша фамилия</span><input type="text">
+                    <span id="your-surname">Ваша фамилия</span><input type="text" id="input-surname" placeholder="введите фамилию">
                 </div>
                 <div>
-                    <span>Ваш возвраст</span><input type="number">
+                    <span id="your-age">Ваш возвраст</span><input type="number" id="input-age" placeholder="введите возвраст">
                 </div>
                 <div>
-                    <input type="button" value="ok">
-                    <input type="reset" value="сброс">
+                    <input type="button" value="ok" id="ok-button">
+                    <input type="reset" value="сброс" id="reset-button">
                 </div>
             </form>
         </div>
-        <div class="footer">
+        <div class="footer" id="footer">
             <i>Факультет Бизнеса, ФБИ-03, 3 курс, 2022</i>
         </div>
     </body>
